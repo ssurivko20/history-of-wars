@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.header-cont {
+    height: 100%;
+    background-image: linear-gradient(135deg, rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6));
+}
+
+#header-image {
+    background-image: url("../images/head-back1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.header-text {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.header-text > div > p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.heading {
+    font-size: 7vw;
+}
+
+.quote{
+    font-size: 1.2vw;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+    .quote {
+        font-size: 2vw;
+    }
+}
+
+.down-icon {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+

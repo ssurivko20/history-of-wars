@@ -1,15 +1,47 @@
+:root {
+    --icon-size: 1vw;
+}
+
+@font-face {
+    font-family: 'greek';
+    src: url("../fonts/DalekPinpointBold.ttf");
+}
+
+@font-face {
+    font-family: 'mediavel';
+    src: url("../fonts/Canterbury.ttf");
+}
+
+@font-face {
+    font-family: 'enlight';
+    src: url("../fonts/Italianno-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'modern';
+    src: url("../fonts/Alpenkreuzer.ttf");
+}
+
+@font-face {
+    font-family: 'geolight';
+    src: url("../fonts/GeosansLight.ttf");
+}
+
 body, html {
     height: 100%;
     margin: 0;
 }
 
-.header-cont {
+#header-cont {
     height: 100%;
-    background-image: linear-gradient(135deg, rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6));
+    background-image: linear-gradient(135deg, rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    position: relative;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
 }
 
 #header-image {
-    background-image: url("../images/head-back1.jpg");
+    background-image: url("../images/head-back-20th.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +49,13 @@ body, html {
     width: 100%;
     z-index: -1;
     position: absolute;
+    animation: zoom 10s infinite ease-out;
+}
+
+@keyframes zoom{
+    100%{
+        transform: scale(1.2);
+    }
 }
 
 .header-text {
@@ -24,7 +63,7 @@ body, html {
     justify-content: center;
     align-content: center;
     height: 100%;
-    text-align: center;
+    text-align: center;    
 }
 
 .header-text > div > p {
@@ -32,22 +71,25 @@ body, html {
     color: rgb(255, 255, 255);
 }
 
-.heading {
+#heading {
     font-size: 7vw;
+    font-family: 'modern';
 }
 
-.quote{
+#quote{
     font-size: 1.2vw;
     margin: 0;
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%);
+    font-style: italic;
+    font-family: 'geolight';
 }
 
-@media only screen and (max-width: 600px) {
-    .quote {
-        font-size: 2vw;
+@media only screen and (max-width: 800px) {
+    #quote {
+        font-size: 3vw;
     }
 }
 
@@ -55,7 +97,39 @@ body, html {
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
+}
+
+.down-icon span {
+    margin: -0.5vw;
+    display: block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+.down-icon span:nth-child(2){
+    animation-delay: -.2s;    
+}
+.down-icon span:nth-child(3){
+    animation-delay: -.4s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-var(--icon-size), -var(--icon-size));
+    }
+    50%{        
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(var(--icon-size), var(--icon-size));
+    }
 }
 
 

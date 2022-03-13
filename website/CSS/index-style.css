@@ -1,5 +1,6 @@
 :root {
     --icon-size: 0.9vw;
+    --black-main: rgb(0, 0, 0);
 }
 
 @font-face {
@@ -27,7 +28,8 @@
     src: url("../fonts/GeosansLight.ttf");
 }
 
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
 }
@@ -54,8 +56,8 @@ body, html {
     transition: 1s;
 }
 
-@keyframes zoom{
-    100%{
+@keyframes zoom {
+    100% {
         transform: scale(1.2);
     }
 }
@@ -68,7 +70,7 @@ body, html {
     text-align: center;
 }
 
-.header-text > div > p {
+.header-text>div>p {
     margin: 0;
     color: rgb(255, 255, 255);
 }
@@ -78,7 +80,7 @@ body, html {
     font-family: 'modern';
 }
 
-#quote{
+#quote {
     font-size: 1.2vw;
     margin: 0;
     position: absolute;
@@ -107,34 +109,56 @@ body, html {
     animation: animate 2s infinite;
 }
 
-.down-icon span:nth-child(1){
-    animation-delay: -.2s;    
+.down-icon span:nth-child(1) {
+    animation-delay: -.2s;
 }
-.down-icon span:nth-child(2){
+
+.down-icon span:nth-child(2) {
     animation-delay: -.4s;
 }
 
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         opacity: 0;
         transform: rotate(45deg) translate(-var(--icon-size), -var(--icon-size));
     }
-    50%{        
+    50% {
         opacity: 1;
     }
-    100%{
+    100% {
         opacity: 0;
         transform: rotate(45deg) translate(var(--icon-size), var(--icon-size));
     }
 }
 
-.nav-cont{
+@media only screen and (max-width: 800px) {
+    #quote {
+        font-size: 3.5vw;
+    }
+    #heading {
+        font-size: 10vw;
+    }
+    .nav-list {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-list {
+        font-size: 10px;
+    }
+    #quote {
+        font-size: 4vw;
+    }
+}
+
+.nav-cont {
     margin: 2.5vw;
     display: flex;
     justify-content: center;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -145,104 +169,50 @@ body, html {
     width: min-content+1vw;
 }
 
-.nav-element{
+.nav-element {
     text-align: center;
     margin: 2vw;
-    background-image: url("../images/wall.png");
+    background-color: var(--black-main);
     background-position: center;
     background-size: 300%;
     border-radius: 5px;
     padding: 20px;
     height: auto;
     max-height: 30px;
-    box-shadow:
-    0 0 5px rgb(255, 0, 0),
-    0 0 10px rgb(255, 0, 0),
-    0 0 10px rgb(255, 255, 255),
-    0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
     animation: grad 5s infinite forwards;
     animation-delay: 2s;
     transition: 0.5s;
 }
 
-@keyframes grad{
-    0%{
-        box-shadow:
-        0 0 5px rgb(255, 94, 0),
-        0 0 10px rgb(255, 0, 0),
-        0 0 10px rgb(255, 255, 255),
-        0 0 10px rgb(255, 255, 255);
-        }
-    25%{
-        box-shadow:
-        0 0 5px rgb(255, 123, 0),
-        0 0 10px rgb(255, 115, 0),
-        0 0 10px rgb(255, 255, 255),
-        0 0 10px rgb(255, 255, 255);
-        }
-    50%{
-        box-shadow:
-        0 0 5px rgb(255, 0, 0),
-        0 0 10px rgb(255, 102, 0),
-        0 0 10px rgb(255, 255, 255),
-        0 0 10px rgb(255, 255, 255);
-        }
-    75%{
-        box-shadow:
-        0 0 5px rgb(255, 102, 0),
-        0 0 10px rgb(255, 8, 0),
-        0 0 10px rgb(255, 255, 255),
-        0 0 10px rgb(255, 255, 255);
-        }
-    100%{
-        box-shadow:
-        0 0 5px rgb(255, 60, 0),
-        0 0 10px rgb(255, 0, 0),
-        0 0 10px rgb(255, 255, 255),
-        0 0 10px rgb(255, 255, 255);
-        }
+@keyframes grad {
+    0% {
+        box-shadow: 0 0 5px rgb(255, 94, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    }
+    25% {
+        box-shadow: 0 0 5px rgb(255, 123, 0), 0 0 10px rgb(255, 115, 0), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    }
+    50% {
+        box-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(255, 102, 0), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    }
+    75% {
+        box-shadow: 0 0 5px rgb(255, 102, 0), 0 0 10px rgb(255, 8, 0), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    }
+    100% {
+        box-shadow: 0 0 5px rgb(255, 60, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    }
 }
 
-.nav-element > a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-.nav-element:hover{
+.nav-element:hover {
     transition: 0.5s;
-    background-size: 400%;
-    box-shadow:
-    0 0 20px rgb(255, 0, 0),
-    0 0 20px rgb(255, 0, 0),
-    0 0 30px rgb(255, 255, 255),
-    0 0 30px rgb(255, 255, 255);
-    text-shadow: 
-    0 0 20px rgb(255, 0, 0),
-    0 0 20px rgb(255, 0, 0),
-    0 0 30px rgb(255, 255, 255),
-    0 0 30px rgb(255, 255, 255);
-    box-shadow:none;
+    background-color: #000;
+    box-shadow: 0 0 20px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(212, 0, 0), 0 0 20px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 30px rgb(255, 255, 255), 0 0 35px rgb(255, 255, 255);
+    box-shadow: none;
     animation: none;
 }
-
-@media only screen and (max-width: 800px) {
-    #quote {
-        font-size: 3vw;
-    }
-    #heading {
-        font-size: 10vw;
-    }
-    .nav-list{
-        font-size: 15px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .nav-list{
-        font-size: 10px;
-    }
-}
-
-
-
-

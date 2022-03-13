@@ -1,4 +1,4 @@
-AOS.init();
+AOS.init({ debounceDelay: 50 });
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);

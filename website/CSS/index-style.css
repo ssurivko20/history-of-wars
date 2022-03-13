@@ -68,22 +68,23 @@ html {
     margin: 0;
 }
 
-@keyframes bodygrad {
-    0% {
-        background-image: linear-gradient(black 80%, red);
-    }
-    25% {
-        background-image: linear-gradient(rgb(255, 255, 255) 60%, red);
-    }
-    50% {
-        background-image: linear-gradient(black 40%, red);
-    }
-    75% {
-        background-image: linear-gradient(rgb(255, 255, 255) 20%, red);
-    }
-    100% {
-        background-image: linear-gradient(black 5%, red 95%);
-    }
+.backgrad {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.backgrad-images {
+    background-image: url("../images/backblurred.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 
 #header-cont {
@@ -289,9 +290,6 @@ a {
     }
     .nav-list {
         font-size: 15px;
-    }
-    .main-box {
-        width: 100%;
     }
     .main-text1,
     .main-text2 {

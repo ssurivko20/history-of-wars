@@ -6,8 +6,8 @@ function setBackgroundImage(){
   var imgSources = ["images/head-back-ancient.jpg", "images/head-back-medie.jpg",
   "images/head-back-18th.jpg", "images/head-back-20th.jpg"];
 
-  var quotes = ['"Only the dead have seen the end of war."<br>— Plato', '"God created war so that Americans would learn geography."<br>― Mark Twain',
-  '"War is what happens when language fails."<br>― Margaret Atwood', '"I know not with what weapons World War III will be fought,<br> but World War IV will be fought with sticks and stones."<br>― Albert Einstein'];
+  var quotes = ['"Only the dead have seen the end of war."<br>&#9866; Plato', '"God created war so that Americans would learn geography."<br>&#9866; Mark Twain',
+  '"War is what happens when language fails."<br>&#9866; Margaret Atwood', '"I know not with what weapons World War III will be fought,<br> but World War IV will be fought with sticks and stones."<br>&#9866; Albert Einstein'];
   var qlen = quotes.length;
   document.getElementById("quote").innerHTML = quotes[getRandomInt(qlen)];
 

@@ -1,11 +1,12 @@
 :root {
-    --icon-size: 0.9vw;
+    --dropdown-size: 1vw;
     --black-main: rgb(0, 0, 0);
+    --icon-size: 150px;
 }
 
 ::-webkit-scrollbar {
     width: 0px;
-    /* background-color: #000; */
+    background-color: #000;
 }
 
 ::-moz-selection {
@@ -50,6 +51,8 @@
 body,
 html {
     height: 100%;
+    box-sizing: border-box;
+    width: 100%;
     margin: 0;
 }
 
@@ -140,8 +143,8 @@ html {
 .down-icon span {
     margin: -0.5vw;
     display: block;
-    width: var(--icon-size);
-    height: var(--icon-size);
+    width: var(--dropdown-size);
+    height: var(--dropdown-size);
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
     transform: rotate(45deg);
@@ -159,14 +162,14 @@ html {
 @keyframes animate {
     0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-var(--icon-size), -var(--icon-size));
+        transform: rotate(45deg) translate(-var(--dropdown-size), -var(--dropdown-size));
     }
     50% {
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: rotate(45deg) translate(var(--icon-size), var(--icon-size));
+        transform: rotate(45deg) translate(var(--dropdown-size), var(--dropdown-size));
     }
 }
 
@@ -240,11 +243,11 @@ a {
 }
 
 .nav-icon {
-    width: 160px;
-    height: 160px;
+    width: var(--icon-size);
+    height: var(--icon-size);
     position: absolute;
     z-index: -1;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -261,11 +264,20 @@ a {
     background-image: url("../images/icon1.png");
 }
 
-.nav-element:hover+#icon1 {
-    background-image: url("../images/icon1.png");
+#icon2 {
+    background-image: url("../images/icon2.png");
+}
+
+#icon3 {
+    background-image: url("../images/icon3.png");
+}
+
+#icon4 {
+    background-image: url("../images/icon4.png");
 }
 
 .main-cont {
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -281,7 +293,7 @@ a {
     justify-content: center;
     grid-template-rows: 1fr 1fr 1fr;
     color: #fff;
-    background-image: linear-gradient(135deg, black 50%, rgb(77, 0, 0));
+    background-image: linear-gradient(135deg, black 40%, rgb(77, 0, 0));
 }
 
 .main-heading {
@@ -298,12 +310,24 @@ a {
 
 #about-box {
     width: 70%;
-    background-image: linear-gradient(135deg, black 50%, rgb(0, 36, 77));
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(135deg, black 40%, rgb(0, 36, 77));
+}
+
+@media only screen and (max-width: 960px) {
+    .nav-list {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    .main-box,
+    #about-box {
+        width: 80%;
+    }
     #quote {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     #heading {
         font-size: 10vw;
@@ -319,7 +343,12 @@ a {
         font-size: 40px;
     }
     .nav-icon {
-        width: 120px;
-        height: 120px;
+        --icon-size: 120px;
+    }
+    .main-cont {
+        margin: 5vw;
+    }
+    .down-icon span {
+        --dropdown-size: 1.5vw;
     }
 }

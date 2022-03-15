@@ -5,11 +5,19 @@
 
 # History of Wars
 
-History of Wars is a website about battles and conflicts from the past and now.
+History of Wars is a website created to show and explain simply about: scientific explanation of human aggression, the most catastrophic wars in history, wars consequences on statistics and influence of wars in culture and art and famous quotes :P.
 
 
-![Logo](https://www.quizony.com/trojan-war-story/imageForSharing.jpg)
 
+![Img](https://www.quizony.com/trojan-war-story/imageForSharing.jpg)
+
+<br>
+
+### “The supreme art of war is to subdue the enemy without fighting.” <br>
+#### ― Sun Tzu, The Art of War
+
+<br>
+<br>
 
 ## Demo
 
@@ -34,4 +42,3 @@ Documentation is avaible [here.](https://linktodocumentation)
 - [@bstopuzyan20](https://www.github.com/@bstopuzyan20)
 
 
-## Contact Us

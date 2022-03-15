@@ -22,17 +22,17 @@ History of Wars is a website created to show and explain simply about: scientifi
 
 "Hosted website link here :) !"
 
+<br>
 
 ## Documentation
 
 Documentation is avaible [here.](https://linktodocumentation)
 
+<br>
 
 ## Languages
 
-
-
-
+<br>
 
 ## Authors
 

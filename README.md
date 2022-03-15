@@ -11,7 +11,6 @@ History of Wars is a website created to show and explain simply about: scientifi
 
 ![Img](https://www.quizony.com/trojan-war-story/imageForSharing.jpg)
 
-<br>
 
 ### “The supreme art of war is to subdue the enemy without fighting.” <br>
 #### ― Sun Tzu, The Art of War

@@ -1,7 +1,8 @@
 <h1 align="center">History Of Wars</h1>
-<h6 align="center">History and Geography project</h6>
 
-![Logo](https://github.com/ssurivko20/history-of-wars/blob/main/website/images/text-and-logo-white2.png?raw=true)
+<p align="center">
+<img height = "400" src = "https://github.com/ssurivko20/history-of-wars/blob/main/website/images/text-and-logo-white2.png" />
+</p>
 
 
 ## Description
@@ -47,5 +48,3 @@ Documentation is available [here.](https://linktodocumentation)
 - [@saboev20](https://www.github.com/saboev20)
 - [@ssurivko20](https://www.github.com/@ssurivko20)
 - [@bstopuzyan20](https://www.github.com/@bstopuzyan20)
-
-

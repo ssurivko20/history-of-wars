@@ -10,7 +10,7 @@ function getRandomInt(max) {
 
 redcur = 12;
 blackcur = 6;
-var backgrad = document.getElementsByClassName("backgrad-images")[0];
+var backgrad = document.getElementsByClassName("backgrad")[0];
 var span;
 var randtop;
 var randleft;
@@ -36,7 +36,8 @@ $('.cblack').css({
     'background-color': 'black',
     'position': 'absolute',
     'transform': 'translate(-50%, -50%)',
-    'transition': '1s',
+    'transition': '.5s',
+    'filter': 'blur(20px)'
 });
 
 for (var i = 0; i < blackcur; i++) {
@@ -58,8 +59,9 @@ $('.cred').css({
     'background-color': 'rgb(255, 56, 56)',
     'position': 'absolute',
     'transform': 'translate(-50%, -50%)',
-    'transition': '1s',
-    'box-shadow': '0 0 1vw rgb(255, 0, 0), 0 0 2vw rgb(255, 0,0), 0 0 2vw rgb(255, 0, 0), 0 0 2vw rgb(255, 0, 0)'
+    'transition': '.5s',
+    'box-shadow': '0 0 1vw rgb(255, 0, 0), 0 0 2vw rgb(255, 0,0), 0 0 2vw rgb(255, 0, 0), 0 0 2vw rgb(255, 0, 0)',
+    'filter': 'blur(20px)'
 });
 
 for (var i = 0; i < redcur; i++) {

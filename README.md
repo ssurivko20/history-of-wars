@@ -1,8 +1,14 @@
+<h1 align="center">History Of Wars</h1>
+<h6 align="center">History and Geography project</h6>
+
 ![Logo](https://github.com/ssurivko20/history-of-wars/blob/main/website/images/text-and-logo-white2.png?raw=true)
 
-# History of Wars
 
-History of Wars is a website created to show and explain simply about: scientific explanation of human aggression, the most catastrophic wars in history, wars consequences on statistics and influence of wars in culture and art (and famous quotes :P).
+<br>
+<br>
+
+## Description
+History Of Wars is a website created to show and explain simply about: scientific explanation of human aggression, the most catastrophic wars in history, wars consequences on statistics and influence of wars in culture and art (and famous quotes :P).
 
 
 

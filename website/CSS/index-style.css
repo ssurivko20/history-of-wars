@@ -51,9 +51,9 @@
 body,
 html {
     height: 100%;
-    box-sizing: border-box;
     width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 .backgrad {
@@ -61,18 +61,17 @@ html {
     z-index: -1;
     width: 100%;
     height: 100%;
+    filter: blur(20px);
 }
 
 .backgrad-images {
-    background-image: url("../images/backblurred.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     width: 100%;
     height: 100%;
-    background-size: cover;
 }
 
 #header-cont {
@@ -186,14 +185,15 @@ html {
     font-family: 'geolight';
     font-size: 25px;
     color: #fff;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(255, 255, 255);
     width: min-content+1vw;
+    overflow: hidden;
 }
 
 .nav-element {
     text-align: center;
     margin: 2vw;
-    background-color: var(--black-main);
+    background-color: rgb(0, 0, 0);
     background-position: center;
     background-size: 300%;
     border-radius: 5px;
@@ -204,6 +204,9 @@ html {
     animation: grad 5s infinite forwards;
     animation-delay: 2s;
     transition: 0.5s;
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
 
 @keyframes grad {
@@ -238,10 +241,6 @@ a {
     animation: none;
     color: #000;
     font-weight: bold;
-}
-
-.nav-element-cont {
-    position: relative;
 }
 
 .nav-icon {
@@ -291,12 +290,13 @@ a {
     padding: 50px;
     border-radius: 10px;
     width: 60%;
-    height: 600px;
+    height: auto;
     display: grid;
+    gap: 5vw;
     justify-content: center;
     grid-template-rows: 1fr 1fr 1fr;
     color: #fff;
-    background-image: linear-gradient(135deg, rgb(14, 14, 14) 40%, rgb(77, 0, 0));
+    background-image: linear-gradient(135deg, rgb(14, 14, 14, 0.9) 40%, rgb(77, 0, 0, 0.9));
 }
 
 .main-heading {
@@ -312,33 +312,60 @@ a {
 }
 
 #about-box {
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-columns: 5fr;
-    background-image: linear-gradient(135deg, rgb(14, 14, 14) 40%, rgb(0, 68, 77));
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    background-image: linear-gradient(135deg, rgb(14, 14, 14, 0.9) 40%, rgb(0, 68, 77, 0.9));
     justify-content: center;
-    gap: 50px;
+    height: auto;
 }
 
 #about-box .main-text2 {
     background-image: url("../images/text-and-logo-white2.png");
     background-size: cover;
-    width: 450px;
-    height: 250px;
+    width: 30vw;
+    height: 15vw;
 }
 
 .main-text2-cont {
     width: 100%;
+    display: flex;
     justify-content: center;
-    display: grid;
 }
 
-@media only screen and (max-width: 960px) {
-    .nav-list {
-        font-size: 20px;
+
+/* @media only screen and (min-width: 1400px) {
+    .main-box,
+    #about-box {
+        width: 80%;
+        height: 700px;
     }
-}
+    #quote {
+        font-size: 2vw;
+    }
+    #heading {
+        font-size: 10vw;
+    }
+    .nav-list {
+        font-size: 50px;
+    }
+    .main-text1,
+    .main-text2 {
+        font-size: 30px;
+    }
+    .main-heading {
+        font-size: 60px;
+    }
+    .nav-icon {
+        --icon-size: 120px;
+    }
+    .main-cont {
+        margin: 5vw;
+    }
+    .down-icon span {
+        --dropdown-size: 1.5vw;
+    }
+} */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .main-box,
     #about-box {
         width: 80%;
@@ -354,7 +381,7 @@ a {
     }
     .main-text1,
     .main-text2 {
-        font-size: 16px;
+        font-size: 18px;
     }
     .main-heading {
         font-size: 40px;
@@ -367,5 +394,17 @@ a {
     }
     .down-icon span {
         --dropdown-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-list {
+        font-size: 12px;
+    }
+    #quote {
+        font-size: 4vw;
+    }
+    .down-icon span {
+        --dropdown-size: 2vw;
     }
 }

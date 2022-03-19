@@ -1,9 +1,89 @@
+// initialize aos library for anmitaing
 AOS.init({ debounceDelay: 50 });
 
+// function for generating random whole numbers
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+// Animating background of page
+
+redcur = 12;
+blackcur = 6;
+var backgrad = document.getElementsByClassName("backgrad-images")[0];
+var span;
+var randtop;
+var randleft;
+var positionList = new Array();
+
+for (var i = 0; i < blackcur; i++) {
+    span = document.createElement('span');
+    span.setAttribute("id", "blackcur" + i);
+    span.setAttribute('class', 'cblack');
+    backgrad.appendChild(span);
+}
+for (var i = 0; i < redcur; i++) {
+    span = document.createElement('span');
+    span.setAttribute("id", "redcur" + i);
+    span.setAttribute('class', 'cred');
+    backgrad.appendChild(span);
+}
+
+$('.cblack').css({
+    'width': '50vw',
+    'height': '50vw',
+    'border-radius': '50%',
+    'background-color': 'black',
+    'position': 'absolute',
+    'transform': 'translate(-50%, -50%)',
+    'transition': '1s',
+});
+
+for (var i = 0; i < blackcur; i++) {
+    span.setAttribute("id", "blackcur" + i);
+    randleft = getRandomInt(101);
+    randtop = getRandomInt(101);
+    $('#' + 'blackcur' + i).css({
+        'top': randtop + '%',
+        'left': randleft + '%'
+    })
+    positionList.push(randtop);
+    positionList.push(randleft);
+}
+
+$('.cred').css({
+    'width': '2vw',
+    'height': '2vw',
+    'border-radius': '50%',
+    'background-color': 'rgb(255, 56, 56)',
+    'position': 'absolute',
+    'transform': 'translate(-50%, -50%)',
+    'transition': '1s',
+    'box-shadow': '0 0 1vw rgb(255, 0, 0), 0 0 2vw rgb(255, 0,0), 0 0 2vw rgb(255, 0, 0), 0 0 2vw rgb(255, 0, 0)'
+});
+
+for (var i = 0; i < redcur; i++) {
+    span.setAttribute("id", "redcur" + i);
+    randleft = getRandomInt(101);
+    randtop = getRandomInt(101);
+    $('#' + 'redcur' + i).css({
+        'top': randtop + '%',
+        'left': randleft + '%'
+    })
+    positionList.push(randtop);
+    positionList.push(randleft);
+}
+
+function moveCircles() {
+    for (var i = 0; i < redcur; i += 1) {
+        $('#' + 'redcur' + i).css({
+            'top': positionList[i] + getRandomInt(5) + '%',
+            'left': positionList[i + 1] + getRandomInt(5) + '%'
+        })
+    }
+}
+
+// function for slideshowing of header images on home page
 function setBackgroundImage() {
     var imgSources = ["images/head-back-ancient.jpg", "images/head-back-medie.jpg",
         "images/head-back-18th.jpg", "images/head-back-20th.jpg"
@@ -36,6 +116,6 @@ function setBackgroundImage() {
     }
 }
 
+// Setting image and time interval
 setBackgroundImage();
-
-var timeid = setInterval(function() { setBackgroundImage(); }, 10000);
+var timeid2 = setInterval(function() { setBackgroundImage(); }, 10000);

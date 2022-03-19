@@ -1,7 +1,4 @@
-
-
 ![Logo](https://github.com/ssurivko20/history-of-wars/blob/main/website/images/text-and-logo-white2.png?raw=true)
-
 
 # History of Wars
 

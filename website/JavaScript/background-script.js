@@ -33,7 +33,7 @@ $('.cblack').css({
     'width': '35vw',
     'height': '35vw',
     'border-radius': '50%',
-    'background-color': 'rgb(20, 20, 20)',
+    'background-color': 'rgb(11, 11, 11)',
     'position': 'absolute',
     'transform': 'translate(-50%, -50%)',
     'filter': 'blur(20px)'

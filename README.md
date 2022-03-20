@@ -34,7 +34,7 @@ History Of Wars is a website created to show and explain simply about: scientifi
 
 ## Presentation 
 
-<img src="https://github.com/othneildrew/Best-README-Template/blob/master/images/logo.png?raw=true" alt="Logo" width="20" height="20"> Presentation is available [here.] [wars in history.pptx](https://github.com/ssurivko20/history-of-wars/files/8312003/wars.in.history.pptx)
+<img src="https://github.com/othneildrew/Best-README-Template/blob/master/images/logo.png?raw=true" alt="Logo" width="20" height="20"> Presentation is available here. [wars in history.pptx](https://github.com/ssurivko20/history-of-wars/files/8312003/wars.in.history.pptx)
 <br>
 
 

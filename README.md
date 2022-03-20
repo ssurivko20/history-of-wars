@@ -28,10 +28,8 @@ History Of Wars is a website created to show and explain simply about: scientifi
 ## Documentation 
 
 <img src="https://github.com/othneildrew/Best-README-Template/blob/master/images/logo.png?raw=true" alt="Logo" width="20" height="20"> Documentation is available [here.](https://linktodocumentation) <br>
-<img src="https://media.discordapp.net/attachments/915538646768181259/955118896829042708/316789.webp?width=591&height=581" alt="Logo" width="20" height="20"> Presentation is available [here.](https://github.com/ssurivko20/history-of-wars/files/8312003/wars.in.history.pptx)
+
 <br>
-
-
 <br>
 
 ## Languages and tools:

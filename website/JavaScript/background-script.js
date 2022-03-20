@@ -5,7 +5,7 @@ function getRandomInt(max) {
 // Animating background of page
 
 redcur = 8;
-blackcur = 9;
+blackcur = 7;
 var backgrad = document.getElementsByClassName("backgrad")[0];
 var span;
 var randtop;

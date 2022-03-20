@@ -37,7 +37,6 @@
 .celem:hover {
     background-color: rgba(10, 0, 0, 0.9);
     transition: 0.5s;
-    font-size: 22px;
 }
 
 #t-elem1 {
@@ -58,18 +57,20 @@
     align-content: center;
     grid-row: 1/4;
     transition: 0.5s;
-    animation: buttonanim 5s infinite;
+    animation: buttonanim 10s infinite forwards;
 }
 
 @keyframes buttonanim {
     0% {
-        box-shadow: 0 0 5px rgb(255, 0, 0, 0.8);
+        box-shadow: 0 0 10px rgb(255, 0, 0, 0.9);
     }
     50% {
         box-shadow: none;
+        background-image: url("../images/icon-home.png");
+        transition: 0.5s;
     }
     100% {
-        box-shadow: 0 0 5px rgb(255, 0, 0, 0.8);
+        box-shadow: 0 0 10px rgb(255, 0, 0, 0.9);
     }
 }
 

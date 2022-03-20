@@ -21,7 +21,14 @@ History Of Wars is a website created to show and explain simply about: scientifi
 
 ## Demo
 
-"Hosted website link is here :) !"
+#### Home Page
+
+<img height = "300px" width = "600px" src = "https://media.discordapp.net/attachments/915538646768181259/955211387615985766/unknown.png?width=1246&height=580">
+
+#### Block Diagram
+<br>
+
+<img height = "300px" width = "600px" src = "" alt = "Block Diagram">
 
 <br>
 

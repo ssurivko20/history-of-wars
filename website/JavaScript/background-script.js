@@ -4,8 +4,8 @@ function getRandomInt(max) {
 
 // Animating background of page
 
-redcur = 6;
-blackcur = 8;
+redcur = 8;
+blackcur = 6;
 var backgrad = document.getElementsByClassName("backgrad")[0];
 var span;
 var randtop;
@@ -26,10 +26,10 @@ for (var i = 0; i < redcur; i++) {
 }
 
 $('.cblack').css({
-    'width': '30vw',
-    'height': '30vw',
+    'width': '35vw',
+    'height': '35vw',
     'border-radius': '50%',
-    'background-color': 'rgb(20, 20, 20)',
+    'background-color': 'rgb(25, 20, 20)',
     'position': 'absolute',
     'transform': 'translate(-50%, -50%)',
     'filter': 'blur(20px)'

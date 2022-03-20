@@ -4,10 +4,12 @@
     --icon-size: 150px;
     --gen-font-size: 20px;
     --footer-color: rgb(255, 0, 0, 0.8);
+    --red-darker: rgb(255, 38, 38);
+    --red-lighter: rgb(255, 100, 100);
 }
 
 ::selection {
-    background: rgb(255, 38, 38);
+    background: var(--red-darker);
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +28,7 @@
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 0, 0);
+    background: var(--red-darker);
     border-radius: 10px;
 }
 

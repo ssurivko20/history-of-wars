@@ -28,7 +28,7 @@ History Of Wars is a website created to show and explain simply about: scientifi
 #### Block Diagram
 <br>
 
-<img height = "300px" width = "600px" src = "" alt = "Block Diagram">
+<img  src = "https://media.discordapp.net/attachments/915538646768181259/955220445039296592/Untitled_Diagram.drawio.png?width=268&height=579" alt = "Block Diagram">
 
 <br>
 
@@ -48,7 +48,9 @@ History Of Wars is a website created to show and explain simply about: scientifi
     <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"/>
     <img height = "50px" src="https://cdn.freelogovectors.net/wp-content/uploads/2021/09/adobe-photoshop-logo-freelogovectors.net_.png"/>
     <img height = "50px" src=" https://cdn.iconscout.com/icon/free/png-256/discord-3691244-3073764.png"/>         
-
+    <img height = "50px" src=" https://cdn.pixabay.com/photo/2015/11/27/10/55/photoshop-1065296_640.jpg"/>   
+    
+    
 <br>
 
 ## Authors

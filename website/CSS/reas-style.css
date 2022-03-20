@@ -61,9 +61,13 @@
 }
 
 @keyframes buttonanim {
+    0% {
+        box-shadow: 0 0 10px rgb(255, 0, 0, 0.9);
+    }
     50% {
-        background-image: url("../images/icon-home.png");
-        transition: 0.5s;
+        box-shadow: none;
+    }
+    100% {
         box-shadow: 0 0 10px rgb(255, 0, 0, 0.9);
     }
 }
@@ -71,7 +75,6 @@
 #t-elem2:hover {
     background-image: url("../images/icon-home.png");
     transition: 0.5s;
-    background-size: 60%;
 }
 
 #t-elem3 {

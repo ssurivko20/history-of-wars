@@ -29,7 +29,7 @@ $('.cblack').css({
     'width': '30vw',
     'height': '30vw',
     'border-radius': '50%',
-    'background-color': 'black',
+    'background-color': 'rgb(20, 20, 20)',
     'position': 'absolute',
     'transform': 'translate(-50%, -50%)',
     'filter': 'blur(20px)'

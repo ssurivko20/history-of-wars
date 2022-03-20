@@ -58,7 +58,7 @@
     align-content: center;
     grid-row: 1/4;
     transition: 0.5s;
-    animation: buttonanim 10s infinite forwards;
+    animation: buttonanim 5s infinite forwards;
 }
 
 @keyframes buttonanim {

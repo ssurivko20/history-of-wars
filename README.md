@@ -21,7 +21,7 @@ History Of Wars is a website created to show and explain simply about: scientifi
 
 ## Demo
 
-"Hosted website link here :) !"
+"Hosted website link is here :) !"
 
 <br>
 

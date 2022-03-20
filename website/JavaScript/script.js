@@ -7,9 +7,9 @@ function setBackgroundImage() {
         "images/head-back-18th.jpg", "images/head-back-20th.jpg"
     ];
 
-    var quotes = ['"Only the dead have seen the end of war."<br>&#9866; Plato', '"God created war so that Americans would learn geography."<br>&#9866; Mark Twain',
-        '"War is what happens when language fails."<br>&#9866; Margaret Atwood', '"I know not with what weapons World War III will be fought,<br> but World War IV will be fought with sticks and stones."<br>&#9866; Albert Einstein',
-        '"The greatest victory is that which requires no battle."<br>&#9866; Sun Tzu'
+    var quotes = ['"Only the dead have seen the end of war."<br> &#8722; Plato', '"God created war so that Americans would learn geography."<br> &#8722; Mark Twain',
+        '"War is what happens when language fails."<br> &#8722; Margaret Atwood', '"I know not with what weapons World War III will be fought,<br> but World War IV will be fought with sticks and stones."<br> &#8722; Albert Einstein',
+        '"The greatest victory is that which requires no battle."<br> &#8722; Sun Tzu'
     ];
     var qlen = quotes.length;
     document.getElementById("quote").innerHTML = quotes[getRandomInt(qlen)];

@@ -12,6 +12,8 @@ var randtop;
 var randleft;
 var positionList = new Array();
 
+// Creating span objects
+
 for (var i = 0; i < blackcur; i++) {
     span = document.createElement('span');
     span.setAttribute("id", "blackcur" + i);
@@ -25,6 +27,8 @@ for (var i = 0; i < redcur; i++) {
     backgrad.appendChild(span);
 }
 
+// Setting style to span objects
+
 $('.cblack').css({
     'width': '35vw',
     'height': '35vw',
@@ -34,53 +38,6 @@ $('.cblack').css({
     'transform': 'translate(-50%, -50%)',
     'filter': 'blur(20px)'
 });
-
-for (var i = 0; i < blackcur; i++) {
-    span.setAttribute("id", "blackcur" + i);
-    randleft = getRandomInt(101);
-    randtop = getRandomInt(101);
-    $('#' + 'blackcur' + i).css({
-        'top': randtop + '%',
-        'left': randleft + '%'
-    })
-    positionList.push(randtop);
-    positionList.push(randleft);
-}
-
-$('.cred').css({
-    'width': '2vw',
-    'height': '2vw',
-    'border-radius': '50%',
-    'background-color': 'rgb(255, 56, 56)',
-    'position': 'absolute',
-    'transform': 'translate(-50%, -50%)',
-    'box-shadow': '0 0 1vw rgb(255, 0, 0), 0 0 2vw rgb(255, 0,0), 0 0 2vw rgb(255, 0, 0), 0 0 2vw rgb(255, 0, 0)',
-    'filter': 'blur(20px)'
-});
-
-for (var i = 0; i < redcur; i++) {
-    span.setAttribute("id", "redcur" + i);
-    randleft = getRandomInt(101);
-    randtop = getRandomInt(101);
-    $('#' + 'redcur' + i).css({
-        'top': randtop + '%',
-        'left': randleft + '%'
-    })
-    positionList.push(randtop);
-    positionList.push(randleft);
-}
-
-for (var i = 0; i < blackcur; i++) {
-    span.setAttribute("id", "blackcur" + i);
-    randleft = getRandomInt(101);
-    randtop = getRandomInt(101);
-    $('#' + 'blackcur' + i).css({
-        'top': randtop + '%',
-        'left': randleft + '%'
-    })
-    positionList.push(randtop);
-    positionList.push(randleft);
-}
 
 $('.cred').css({
     'width': '2vw',
@@ -94,11 +51,25 @@ $('.cred').css({
     'filter': 'blur(20px)'
 });
 
+// Random placing of span objects
+
 for (var i = 0; i < redcur; i++) {
     span.setAttribute("id", "redcur" + i);
     randleft = getRandomInt(101);
     randtop = getRandomInt(101);
     $('#' + 'redcur' + i).css({
+        'top': randtop + '%',
+        'left': randleft + '%'
+    })
+    positionList.push(randtop);
+    positionList.push(randleft);
+}
+
+for (var i = 0; i < blackcur; i++) {
+    span.setAttribute("id", "blackcur" + i);
+    randleft = getRandomInt(101);
+    randtop = getRandomInt(101);
+    $('#' + 'blackcur' + i).css({
         'top': randtop + '%',
         'left': randleft + '%'
     })

@@ -25,13 +25,6 @@ History Of Wars is a website created to show and explain simply about: scientifi
 
 <img height = "300px" width = "600px" src = "https://media.discordapp.net/attachments/915538646768181259/955211387615985766/unknown.png?width=1246&height=580">
 
-#### Block Diagram
-<br>
-
-<img  src = "https://media.discordapp.net/attachments/915538646768181259/955220445039296592/Untitled_Diagram.drawio.png?width=268&height=579" alt = "Block Diagram">
-
-<br>
-
 ## Documentation 
 
 <img src="https://github.com/othneildrew/Best-README-Template/blob/master/images/logo.png?raw=true" alt="Logo" width="20" height="20"> Documentation is available [here.](https://github.com/ssurivko20/history-of-wars/tree/main/Documentation) <br>

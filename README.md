@@ -46,7 +46,7 @@ History Of Wars is a website created to show and explain simply about: scientifi
     <img src="https://img.icons8.com/color/48/000000/css3.png"/> 
     <img height = "50px" src="https://img.icons8.com/color/344/javascript--v1.png"/>
     <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"/>
-    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/09/adobe-photoshop-logo-freelogovectors.net_.png"/>    
+    <img height = "50px" src="https://cdn.freelogovectors.net/wp-content/uploads/2021/09/adobe-photoshop-logo-freelogovectors.net_.png"/>    
   
 
 <br>

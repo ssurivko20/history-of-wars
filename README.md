@@ -6,7 +6,7 @@
 
 
 ## Description
-History Of Wars is a website created to show and explain simply about: scientific explanation of human aggression, the most catastrophic wars in history, wars consequences on statistics and influence of wars in culture and art (and famous quotes :P).
+History Of Wars is a website created to show and explain simply about: scientific explanation of human aggression, the most catastrophic wars in history, wars consequences on statistics and influence of wars in culture and art (and famous quotes :P). Оur goal is to use rigorous research, and simple, straight-forward analysis, to improve policies and practices in ways that help reduce conflict and build lasting peace.
 
 
 

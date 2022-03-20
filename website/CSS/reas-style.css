@@ -56,6 +56,13 @@
     justify-content: center;
     align-content: center;
     grid-row: 1/4;
+    transition: 0.5s;
+}
+
+#t-elem2:hover {
+    background-image: url("../images/icon-home.png");
+    transition: 0.5s;
+    background-size: 60%;
 }
 
 #t-elem3 {
